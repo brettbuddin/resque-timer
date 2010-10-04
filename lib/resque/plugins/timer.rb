@@ -1,5 +1,5 @@
 module Resque
-  module Plugin
+  module Plugins
     module Timer
       attr_accessor :expiration
 

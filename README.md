@@ -12,6 +12,8 @@ By default, Timer sets the key expiration time to 3600 seconds. This time can be
     require 'resque/plugins/timer'
     
     class JobName
+      extend Resque::Plugins::Timer
+
       @queue = :primary
       @expiration = 7200 #2 hours
 
